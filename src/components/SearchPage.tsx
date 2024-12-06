@@ -18,7 +18,7 @@ const SearchPage: React.FC = () => {
   const postsPerPage = 5;
 
   const fetchArticles = async () => {
-    if (!searchTerm.trim()) return; // Prevent empty search
+    if (!searchTerm.trim()) return; 
     setLoading(true);
     try {
       const response = await fetch(
